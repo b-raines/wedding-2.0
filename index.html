@@ -4,120 +4,228 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soon to be Mrs. Raines</title>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Euphoria+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/app.css" />
+
+    <!-- Scripts -->
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
     <a name="top"></a>
 
-    <!-- Ring background -->
-    <div class="section first parallax" data-speed="10"></div>
-
-    <!-- Header and sticky nav -->
-    <div class="container">
+    <!-- Sticky Nav and ring background -->
+    <div class="section first parallax" data-speed="5">
       <div class="magellan-container" data-magellan-expedition data-options="throttle_delay:0;destination_threshold:65;">
         <h3 class="logo" data-magellan-arrival="top"><a href="#top">Nicole &amp; Brent</a></h3>
         <dl class="sub-nav right">
-          <dd data-magellan-arrival="info"><a href="#info">Wedding Info</a></dd>
-          <dd data-magellan-arrival="party"><a href="#party">Bridal Party</a></dd>
-          <dd data-magellan-arrival="party"><a href="#party">Bridal Party</a></dd>
-          <dd data-magellan-arrival="party"><a href="#party">Bridal Party</a></dd>
+          <div>
+            <dd data-magellan-arrival="info"><a href="#info">Wedding Info</a></dd>
+            <dd data-magellan-arrival="party"><a href="#party">Bridal Party</a></dd>
+            <dd data-magellan-arrival="contact"><a href="#contact">Contact Us</a></dd>
+          </div>
         </dl>
       </div>
     </div>
 
-    <!-- Wedding Info -->
-    <a name="info" data-magellan-destination="info"></a>
-    <div class="section second parallax" data-speed="3">
-
-      <!-- Tabs -->
-      <dl class="tabs" data-tab>
-        <dd class="active"><a href="#itinerary">Itinerary</a></dd>
-        <dd><a href="#accomodations">Accomodations</a></dd>
-      </dl>
-
-      <!-- Tab Content -->
-      <section class="tab-container tabs-content">
-
-        <!-- Itinerary -->
-        <div class="content active" id="itinerary">
-
-          <!-- Schedule -->
-          <!-- Friday -->
-          <div class="day-container">
-            <h3 class="day">Friday 7/18</h3>
-            <table class="schedule">
-              <tr>
-                <td>TBD</td>
-                <td>Rehearsal Dinner</td>
-                <td>The Victoria Inn</td>
-              </tr>
-            </table>
-          </div>
-
-          <!-- Saturday -->
-          <div class="day-container">
-            <h3 class="day">Saturday 7/19</h3>
-            <table class="schedule">
-              <tr>
-                <td>4:00</td>
-                <td>Ceremony</td>
-                <td>The Oaks</td>
-              </tr>
-              <tr>
-                <td>4:30</td>
-                <td>Cocktail Hour</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>6:00</td>
-                <td>Dinner</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>7:30</td>
-                <td>Dance floor opens</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>10:30</td>
-                <td>Departure</td>
-                <td></td>
-              </tr>
-            </table>
-          </div>
-
+    <!-- Header content -->
+    <div class="header-content">
+        <section class="announce">We're getting married</section>
+        <div class="intro">
+          <p>
+            Nicole and Brent are getting married on July 19, 2014. The ceremony and reception will take place at The Oaks in Somersworth, NH.
+          </p>
         </div>
-
-        <!-- Accomodations -->
-        <div class="content" id="accomodations">
-        </div>
-      </section>
-
     </div>
 
-    <!-- <div class="section third parallax" data-speed="10">
-    </div> -->
+    <div class="position-up">
+      <!-- Wedding Info -->
+      <a name="info" data-magellan-destination="info"></a>
+      <div class="section second parallax" data-speed="5">
 
-    <!-- Bridal Party -->
-    <a name="party"></a>
-    <div class="container party">
-      <div class="small-6 columns">
-        <h3>Bridesmaids</h3>
+        <!-- Tabs -->
+        <dl class="tabs" data-tab>
+          <dd class="active"><a href="#itinerary">Itinerary</a></dd>
+          <dd><a href="#accomodations">Accomodations</a></dd>
+        </dl>
+
+        <!-- Tab Content -->
+        <section class="tab-container tabs-content">
+
+          <!-- Itinerary -->
+          <div class="content active" id="itinerary">
+
+            <!-- Schedule -->
+            <!-- Friday -->
+            <div class="day-container">
+              <h3 class="day">Friday 7/18</h3>
+              <table class="schedule">
+                <tr>
+                  <td>TBD</td>
+                  <td>Rehearsal Dinner</td>
+                  <td><a href="http://www.thevictoriainn.com/" target="_blank">The Victoria Inn</a></td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Saturday -->
+            <div class="day-container">
+              <h3 class="day">Saturday 7/19</h3>
+              <table class="schedule">
+                <tr>
+                  <td>4:00</td>
+                  <td>Ceremony</td>
+                  <td><a href="http://theoaksweddingsnh.com/" target="_blank">The Oaks</a></td>
+                </tr>
+                <tr>
+                  <td>4:30</td>
+                  <td>Cocktail Hour</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6:00</td>
+                  <td>Dinner</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>7:30</td>
+                  <td>Dance floor opens</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10:30</td>
+                  <td>Departure</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+
+          </div>
+
+          <!-- Accomodations -->
+          <div class="content" id="accomodations">
+            <section class="hotel">
+              <section class="discount">* Mention that you are a part of the Krukoff-Raines wedding for discounted rates at The Port Inn and Hampton Inn Dover. Rooms must be reserved prior to June 10 to receive the discounted rate.</section>
+              <h3><a href="http://www.portinnportsmouth.com/" target="_blank">The Port Inn</a></h3>
+              <p>20 minutes to the wedding venue, 5 minutes to Downtown Portsmouth, convenient to traffic circle.</p>
+            </section>
+            <section class="hotel">
+              <h3><a href="http://www.marriott.com/hotels/travel/psmfi-fairfield-inn-portsmouth-seacoast/" target="_blank">The Fairfield Inn</a></h3>
+              <p>20 minutes to the wedding venue, 5 minutes to Downtown Portsmouth, convenient to traffic circle.</p>
+            </section>
+            <section class="hotel">
+              <h3><a href="http://hamptoninn3.hilton.com/en/hotels/new-hampshire/hampton-inn-dover-PSMDOHX/index.html" target="_blank">Hampton Inn Dover</a></h3>
+              <p>10 minutes to the wedding venue, 20 minutes to Portsmouth. There will be a shuttle going to and from the venue. Departure times from Hampton Inn are 2:45 and 3:15. Departure times from the wedding venue is 10:15 and 10:30.</p>
+            </section>
+          </div>
+        </section>
+
       </div>
-      <div class="small-6 columns">
-        <h3>Groomsmen</h3>
+
+      <!-- Bridal Party -->
+      <a name="party" data-magellan-destination="party"></a>
+      <div class="container party">
+
+        <!-- Bridesmaids -->
+        <div class="maids-pics">
+          <figure>
+            <img src="img/studer.png" alt="studer">
+            <figcaption>Ashley</figcaption>
+          </figure>
+          <figure>
+            <img src="img/lyndsy.png" alt="lyndsy">
+            <figcaption>Lyndsy</figcaption>
+          </figure>
+          <figure>
+            <img src="img/amy.png" alt="amy">
+            <figcaption>Amy</figcaption>
+          </figure>
+          <figure>
+            <img src="img/britt.png" alt="britt">
+            <figcaption>Britt</figcaption>
+          </figure>
+          <figure>
+            <img src="img/kendra.png" alt="kendra">
+            <figcaption>Kendra</figcaption>
+          </figure>
+          <figure>
+            <img src="img/hayley.png" alt="hayley">
+            <figcaption>Hayley</figcaption>
+          </figure>
+          <figure>
+            <img src="img/maddie.png" alt="maddie">
+            <figcaption>Maddie</figcaption>
+          </figure>
+          <button id="maids-hide">&#10095;</button>
+        </div>
+
+        <a href="#" id="maids-pics">
+          <div class="small-6 columns maids">
+            <div class="meet">
+              <p>MEET THE</p>
+              <h2 class="text-center">Bridesmaids</h2>
+            </div>
+          </div>
+        </a>
+
+        <!-- Groomsmen -->
+        <a href="#" id="men-pics">
+          <div class="small-6 columns men">
+            <div class="meet">
+              <p>MEET THE</p>
+              <h2 class="text-center">Groomsmen</h2>
+            </div>
+          </div>
+        </a>
+
+        <div class="men-pics">
+          <figure>
+            <img src="img/kevin.png" alt="kevin">
+            <figcaption>Kevin</figcaption>
+          </figure>
+          <figure>
+            <img src="img/carl.png" alt="carl">
+            <figcaption>Carl</figcaption>
+          </figure>
+          <figure>
+            <img src="img/alex.png" alt="alex">
+            <figcaption>Alex</figcaption>
+          </figure>
+          <figure>
+            <img src="img/jeff.png" alt="jeff">
+            <figcaption>Jeff</figcaption>
+          </figure>
+          <figure>
+            <img src="img/brad.png" alt="brad">
+            <figcaption>Brad</figcaption>
+          </figure>
+          <figure>
+            <img src="img/zack.png" alt="zack">
+            <figcaption>Zack</figcaption>
+          </figure>
+          <button id="men-hide">&#10094;</button>
+        </div>
+      </div>
+
+      <!-- Maddie background -->
+      <a name="contact" data-magellan-destination="contact"></a>
+      <div class="section third parallax" data-speed="5">
+        <div class="contact">
+          <p>Thanks for stopping by. Fill in text about registry, etc. For any questions, please contact us <a href="#">here</a>.</p>
+        </div>
       </div>
     </div>
-
-    <!-- Maddie background -->
-    <div class="section fourth parallax" data-speed="5"></div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
-
-
 
   </body>
 </html>
